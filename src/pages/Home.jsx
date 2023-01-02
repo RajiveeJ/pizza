@@ -18,7 +18,7 @@ const Home = () => {
                 })
                 .then((pizzas) => {
                     setPizzas(pizzas);
-                    setIsLoading(true);
+                    setIsLoading(false);
                 });
         } else {
             fetch('https://62df058e976ae7460be6a145.mockapi.io/pizzas?category=' + сategoryId)
