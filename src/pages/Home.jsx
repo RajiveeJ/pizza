@@ -8,10 +8,10 @@ const Home = () => {
     const [pizzas, setPizzas] = React.useState([]);
     const [isLoading, setIsLoading] = React.useState(true);
     const [сategoryId, setCategoryId] = React.useState(1);
-    const [sortType, setSortType] = React.useState(0);
+    
     React.useEffect(() => {
         setIsLoading(true);
-        if (сategoryId == 0) {
+        if (сategoryId === 0) {
             fetch('https://62df058e976ae7460be6a145.mockapi.io/pizzas')
                 .then((res) => {
                     return res.json();
