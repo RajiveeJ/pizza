@@ -18,7 +18,7 @@ const Home = () => {
                 })
                 .then((pizzas) => {
                     setPizzas(pizzas);
-                    setIsLoading(false);
+                    setIsLoading(true);
                 });
         } else {
             fetch('https://62df058e976ae7460be6a145.mockapi.io/pizzas?category=' + сategoryId)
@@ -27,7 +27,7 @@ const Home = () => {
                 })
                 .then((pizzas) => {
                     setPizzas(pizzas);
-                    setIsLoading(false);
+                    setIsLoading(true);
                 });
         }
         window.scrollTo(0, 0);
